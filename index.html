@@ -5,6 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>Hayes Lebovic</title>
 	<meta name="Description" content="Hayes Lebovic" />
+  <meta name="viewport" content="width=device-width">
 </head>
 
 <style>
@@ -14,15 +15,14 @@ html, body {
 }
 
 .content {
-  float: right;
-  position: relative;
-  top: 205px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
   width: 400px;
   padding: 20px;
   background-color: #fff;
   background: rgba(255,255,255,.8);
   text-align: center;
-  margin-right: 20px;
   color: #444;
 }
 
@@ -34,6 +34,14 @@ html, body {
   font-family: 'Syncopate', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   margin: 0 0 10px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .content {
+    right: 0px;
+  }
+
 }
 
 </style>
